@@ -1,0 +1,96 @@
+.order_history {
+    background-color: var(--main-bg);
+    min-height: 100vh;
+    a {
+        color: var(--ex-buy-white);
+        font-size: var( --fs-15);
+        font-weight: 500;
+    }
+    .table_order {
+        background-color: var(--p2p-light-bg);
+        border: 1px solid var(--p2p-border);
+        table {
+            thead {
+                tr {
+                    border-style: unset;
+                    th {
+                        color: var(--ex-buy-white);
+                        font-size: var( --fs-16);
+                        font-weight: 500;
+                        border-style: unset;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        border-style: unset;
+                        color: var(--ex-buy-white);
+                        font-size: var( --fs-14);
+                        font-weight: 500;
+                        .btn_status {
+                            background-color: var(--ex-buy-green);
+                            color: var(--ex-buy-white);
+                            border-radius: 20px;
+                            padding: 6px 25px;
+                            border: 1px solid var(--ex-buy-green);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            background-color: var(--p2p-light-bg);
+            border: 1px solid var(--p2p-border);
+            .modal-header {
+                background-color: var(--nav-bg);
+                h1 {
+                    font-size: var( --fs-16);
+                    color: var(--ex-buy-white);
+                }
+                .btn_close {
+                    background-color: transparent;
+                }
+            }
+            .modal-body {
+                .form_box {
+                    .form-control {
+                        background-color: var(--p2p-tab);
+                        font-size: var( --fs-14);
+                        color: var(--ex-buy-white);
+                        font-weight: 500;
+                        padding: 7px 20px;
+                    }
+                    .css-13cymwt-control {
+                        background-color: var(--p2p-tab);
+                        font-size: var( --fs-14);
+                        color: var(--ex-buy-white);
+                        font-weight: 500;
+                        border: unset;
+                    }
+                }
+            }
+            .modal-footer {
+                .btn_transfer {
+                    background-color: var(--ex-buy-green);
+                    color: var(--ex-buy-white);
+                    border-radius: 20px;
+                    padding: 6px 25px;
+                    border: 1px solid var(--ex-buy-green);
+                }
+                .btn_close {
+                    background-color: var(--ex-buy-red);
+                    color: var(--ex-buy-white);
+                    border-radius: 20px;
+                    padding: 6px 25px;
+                    border: 1px solid var(--ex-buy-red);
+                }
+            }
+        }
+    }
+}

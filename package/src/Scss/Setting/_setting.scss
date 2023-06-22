@@ -1,0 +1,25 @@
+@import "./_support.scss";
+@import "./contactus.scss";
+@import "./_ticketlist.scss";
+@import './_ticketmodal.scss';
+@import './referrallink.scss';
+@import './bankdetail.scss';
+
+.setting-common-sec {
+    background-color: var(--black-bg);
+    min-height: 100vh;
+    .common-head {
+        background-color: var(--modal-head);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        h5 {
+            font-size: 15px;
+            color: var(--stg-green);
+        }
+    }
+    .common-more {
+        background-color: var(--box-bg);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}

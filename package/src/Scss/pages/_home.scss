@@ -1,0 +1,845 @@
+.main {
+  background-color: var(--main-bg);
+  overflow: hidden;
+}
+
+/*=====================
+BANNER SEC CSS START
+======================*/
+
+.banner-sec {
+  position: relative;
+  .banner_line {
+    border-bottom: 3px solid var(--green);
+    opacity: 1;
+    width: 60%;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/home/before.png);
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -97px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/home/after.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+}
+
+.banner-info {
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    color: var(--white);
+    font-size: 58px;
+    line-height: 65px;
+    position: relative;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  button.btn.btn-outline-success {
+    border: 2px solid var(--light-green);
+    color: var(--white);
+    background: var(--main-bg);
+    text-transform: capitalize;
+    border-radius: 30px;
+    font-size: var(--fs-14);
+    font-weight: 500;
+
+    &:hover {
+      background-color: var(--light-green);
+    }
+  }
+}
+
+.globe-image {
+  text-align: center;
+
+  img {
+    animation: loading 20s linear infinite;
+
+    @keyframes loading {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+/*=====================
+BANNER SEC CSS FINISH
+======================*/
+
+/*=====================
+FEATURE SEC CSS Start
+======================*/
+
+.feature_box{
+  background-image:url('/images/home/featureboxbackground.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+
+  z-index: 2;
+  position: relative;
+  color: var(--white);
+  top: -65px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+    left: 0;
+    background: url("/images/home/boxbg1.png") no-repeat ;
+    background-size:contain;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    right: -15px;
+    background: url("/images/home/boxbg2.png") no-repeat;
+  
+    opacity: 1;
+  }
+  .feature_box-inner{
+    hr{
+      max-width: 140px;
+  border: 2px solid var(--headermenuactive);
+  border-radius: 30px;
+  opacity: 1;
+  margin: 0px auto;
+  height:4px;
+    }
+  }
+  .card-box{
+    .card{
+      border-radius: 20px;
+  border: 1px solid var(--white);
+  background: none;
+  color: var(--white);
+  transition: all 0.3s ease;
+  max-width: 100%;
+  min-height: 247px;
+  z-index: 999;
+      &:hover{
+        border-color: var(--headermenuactive);
+  background: var(--black);
+  opacity: 1;
+  cursor:pointer;
+        .feat-img{
+          img{
+            transition: all 0.5s ease;
+    transform: scale(-1) rotate(180deg);
+          }
+        }
+
+}
+     
+      }
+  }
+  .card-body{
+    .card-title{
+      font-size: 20px;
+      font-weight:500;
+    }
+    p{
+      font-size: 15px;
+      opacity: 0.5;
+      font-weight:400;
+    }
+  }
+  .card-footer{
+    .feat-img{
+      width: 60px;
+      margin-left: auto;
+    }
+  }
+}
+
+/*=====================
+FEATURE SEC CSS FINISH
+======================*/
+
+
+/*=====================
+TREND SEC CSS START
+======================*/
+.trade {
+  position: relative;
+  bottom: 65px;
+  color: var(--white);
+  z-index: 0;
+ &::after{
+  position: absolute;
+    content: "";
+    background-image: url(/images/home/circle.png);
+    background-position: left;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    bottom: -53px;
+    z-index: -1;
+    right: -130px;
+    animation: zoom-in-zoom-out 5s ease infinite;
+ }
+ &::before{
+  position: absolute;
+    content: "";
+    background-image: url("/images/home/circle.png");
+    background-position: left;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    top: -53px;
+    left: -130px;
+    animation: zoom-in-zoom-out 5s ease infinite;
+ }
+ .trade-box-inner{
+    hr{
+      border: 2px solid var(--headermenuactive);
+      opacity: 1;
+      max-width: 140px;
+      border-radius: 20px;
+      height:4px;
+    }
+    h1{
+      color: var(--white);
+  font-size: 48px;
+  margin: 40px 0px;
+  font-weight:500;
+    }
+    p{
+      color: var(--platform_p);
+      font-size: 16px;
+      font-weight:400;
+    }
+ }
+ .trade_row-box{
+  .trade_row{
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    position: relative;
+    &::after{
+     
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 90%;
+
+  right: 50%;
+  opacity: 0.2;
+  background-color: var(--white);
+  top: 5%;
+    }
+    &::before{
+      position: absolute;
+  content: "";
+  width: 90%;
+  height: 2px;
+  top: 50%;
+  right: 5%;
+  opacity: 0.2;
+  background-color: var(--white);
+    }
+  
+  }
+ }
+ .scan-box{
+  .scan{
+    border: 1px solid var(--headermenuactive);
+  border-radius: 10px;
+  }
+ }
+ .trade_row{
+  p{
+    font-weight:400;
+  }
+ }
+}
+
+/*=====================
+TREND SEC CSS FINISH
+======================*/
+
+.inner-wrapper {
+  background-color: var(--dark-green);
+  padding: 20px 20px;
+  border-radius: 10px;
+  filter: drop-shadow(var(--drop-shadow));
+  position: relative;
+  z-index: 1;
+
+  .nav-tabs {
+    border: none;
+  }
+
+  .nav-link {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: var(--fs-16);
+
+    &:hover {
+      border-color: var(--nav-active);
+    }
+
+    &.active {
+      background-color: transparent;
+      border-color: var(--nav-active);
+      color: var(--white);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+/*=====================
+BANNER SEC CSS FINISH
+======================*/
+
+/*=====================
+CHOOSE SEC CSS START
+======================*/
+
+.choose_sec {
+  background-image: var(--gradient);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/images/home/circle.png);
+    background-position: left;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    top: -53px;
+    left: -130px;
+    animation: zoom-in-zoom-out 5s ease infinite;
+    @keyframes zoom-in-zoom-out {
+      0% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.5, 1.5);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(/images/home/circle.png);
+    background-position: left;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    bottom: -53px;
+    right: -130px;
+    animation: zoom-in-zoom-out 5s ease infinite;
+    @keyframes zoom-in-zoom-out {
+      0% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.5, 1.5);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
+
+.choose_box {
+  transition: all 0.5s ease;
+  padding: 10px 10px;
+  border-radius: 5px;
+  position: relative;
+  &:hover {
+    background-color: var(--main-bg);
+    transition: all 0.5s ease;
+
+    .choose_icon {
+      img {
+        transition: all 0.5s ease;
+        transform: scale(-1) rotate(180deg);
+      }
+    }
+  }
+  .choose_icon {
+    img {
+      max-width: 60px;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .choose_info {
+    h3 {
+      font-size: var(--fs-16);
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--white);
+      font-size: var(--fs-14);
+      line-height: 19px;
+      font-weight: 500;
+    }
+  }
+}
+
+/*=====================
+CHOOSE SEC CSS FINISH
+======================*/
+
+/*=====================
+WHITEPAPER SEC CSS START
+======================*/
+.whitepaper-sec {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: 146px;
+    background-image: url(/images/home/circle.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+    animation: zoom-in-zoom-out 5s ease infinite;
+    @keyframes zoom-in-zoom-out {
+      0% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.2, 1.2);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+  }
+  .inner-wrapper {
+    background-color: var(--whitepaper-bg);
+    h3 {
+      color: var(--white);
+      text-transform: capitalize;
+      font-size: var(--fs-24);
+    }
+
+    p {
+      color: var(--white);
+      font-size: var(--fs-14);
+      line-height: 20px;
+    }
+
+    .text-box {
+      span {
+        color: var(--white);
+        font-size: var(--fs-14);
+        img {
+          max-width: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .btn-primary {
+      border: 2px solid var(--light-green);
+      color: var(--white);
+      background: var(--light-green);
+      min-width: 100px;
+      text-transform: capitalize;
+      border-radius: 30px;
+      font-size: var(--fs-14);
+      font-weight: 500;
+
+      &:hover {
+        background: var(--light-green);
+        color: var(--white);
+      }
+    }
+
+    .whitepaper-image {
+      img {
+        animation: bounce 1s infinite alternate;
+        -webkit-animation: bounce 1s infinite alternate;
+        // mix-blend-mode: luminosity;
+        @keyframes bounce {
+          from {
+            transform: translateY(0px);
+          }
+          to {
+            transform: translateY(-15px);
+          }
+        }
+        @-webkit-keyframes bounce {
+          from {
+            transform: translateY(0px);
+          }
+          to {
+            transform: translateY(-15px);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=====================
+WHITEPAPER SEC CSS FINISH
+======================*/
+
+/*=====================
+MOBILE APP SEC CSS START
+======================*/
+
+.head {
+  h2 {
+    color: var(--white);
+    font-size: var(--fs-24);
+    margin: 0;
+    padding-bottom: 7px;
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0;
+    color: var(--white);
+    font-size: var(--fs-16);
+    font-weight: 400;
+  }
+}
+
+.trade_img {
+  cursor: pointer;
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+    }
+  }
+  img {
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  p {
+    margin: 0;
+    color: var(--white);
+  }
+}
+
+/*=====================
+MOBILE APP SEC CSS FINISH
+======================*/
+
+/*=====================
+FAQS SEC CSS START
+======================*/
+
+
+
+
+.faq_box {
+  position: relative;
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/home/faq.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .nav {
+  gap: 14px;
+}
+
+.nav-pills .nav-link {
+  color: var(--white);
+  font-weight: 500;
+  font-size: var(--fs-15);
+  border-bottom: 3px solid var(--white);
+  border-radius: 0;
+  padding: 7px 8px;
+
+  &.active {
+    background-color: transparent;
+    border-color: var(--light-green);
+  }
+}
+}
+
+.faq_image {
+  img {
+    animation-name: rotateme;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @keyframes rotateme {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+/*=====================
+FAQS SEC CSS FINISH
+======================*/
+
+/*=====================
+GET IN TOUCH SEC CSS START
+======================*/
+
+.sec_contact {
+  background: #0f282e;
+  position: relative;
+  z-index: 1;
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   background-color: var(--before-layer);
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+
+  #tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .contact_us {
+    position: relative;
+
+    h2 {
+      font-size: var(--fs-35);
+      font-weight: 600;
+      color: var(--white);
+    }
+    .contact_form {
+      form {
+        .form_box {
+          input {
+            background: var(--black);
+            color: var(--white);
+            font-size: 15px;
+            &:focus {
+              box-shadow: none;
+              outline: none;
+            }
+            &::placeholder {
+              color: var(--green);
+              opacity: 1; /* Firefox */
+            }
+            
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+             color: var(--green);
+            }
+            
+            &::-ms-input-placeholder { /* Microsoft Edge */
+             color: var(--green);
+            }
+          }
+
+          button {
+            background: var(--green);
+            color: var(--white);
+            padding: 15px 36px;
+            font-size: 16px;
+            font-weight: 500;
+
+            &.hover {
+              background: var(--green);
+              color: var(--white);
+            }
+          }
+        }
+      }
+
+      p {
+        font-size: var(--fs-16);
+        line-height: 24px;
+        color: var(--white);
+      }
+    }
+
+    .list-group {
+      --bs-list-group-bg: transparent !important;
+    }
+    .list-group-item:hover svg {
+      scale: 1.2;
+      transition: all 0.3s ease;
+    }
+    .list-group-item svg {
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+/*=====================
+GET IN TOUCH SEC CSS FINISH
+======================*/
+@media all and (min-width: 1200px) and (max-width: 1399px) {
+  .banner-info {
+    h1 {
+      font-size: 55px;
+    }
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .banner-info {
+    h1 {
+      font-size: 45px;
+      line-height: 50px;
+    }
+  }
+  .feature_box{
+  .card-box{
+    .card{
+      min-height: 269px;
+    }
+  }
+}
+    
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .banner-info {
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  .faq_image {
+    img {
+      max-width: 70%;
+    }
+  }
+  .banner-sec {
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+    .globe-image {
+      img {
+        max-width: 75%;
+      }
+    }
+  }
+  .feature_box{
+    &::before{
+     display: none;
+    }
+  }
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .faq_image {
+    img {
+      max-width: 70%;
+    }
+  }
+  .feature_box{
+    &::before{
+     display: none;
+    }
+  }
+  
+  .banner-sec {
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+    .globe-image {
+      img {
+        max-width: 75%;
+      }
+    }
+    .banner-info {
+      h2 {
+        br {
+          display: none;
+        }
+      }
+    }
+    .banner-info h1 {
+      font-size: 35px;
+      line-height: 39px;
+    }
+
+    .banner_line {
+      width: 100%;
+    }
+  }
+}
+@media all and (min-width: 320px) and (max-width: 575px) {
+  .trade_row-box{
+    .trade_row{ 
+      &::after, &::before{
+        content: unset !important;
+      }
+     }
+
+    }   
+}

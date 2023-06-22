@@ -1,0 +1,175 @@
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: URDWIN, Helvetica, Arial, sans-serif;
+}
+
+:root {
+    --headerbg: #1E1E1E;
+    --headermenuactive: #2DBD96;
+    --platform_p: #9E9E9E;
+    --boxbg: #0F282E;
+    --black: #000000;
+    --main-bg: #000;
+    //DEFAULT VAR
+    --white: #ffffff;
+    --red: #ed6666;
+    --green: #2dbd96;
+    --grey: #c4c4c4;
+    --sub-text: #a7a7a7;
+    //HOME VAR
+    --light-green: #2dbd96;
+    --dark-green: #0f282e;
+    --drop-shadow: 0px 1px 3px #2dbd96;
+    --nav-active: #2dbd96;
+    --gradient: linear-gradient( to bottom, #0c142126, #0c1b2759, #0b212c, #0d2830, #102e33);
+    --opacity-bg: #0f282e52;
+    --whitepaper-bg: #021b21;
+    --before-layer: rgb(0 0 0 / 79%);
+    //FONTS VAR
+    --fs-8: 0.5rem;
+    --fs-10: 0.625rem;
+    --fs-12: 0.75rem;
+    --fs-13: 0.813rem;
+    --fs-14: 0.875rem;
+    --fs-15: 0.9375rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125;
+    --fs-24: 1.5rem;
+    --fs-30: 1.875rem;
+    --fs-35: 2.188rem;
+    --fs-50: 3.125rem;
+    //EXCHANGE VAR
+    --box-bg: #121413;
+    --black-bg: #000;
+    --drop-shadow: 0px 0px 3px #4f5050;
+    --yellow: #ed8a19;
+    --tab-grey: #c4c4c4;
+    --tab-active: #2dbd96;
+    --active-color: #000;
+    --form-bg: #262827;
+    --ex-border: #393939;
+    --ex-green: #2dbd96;
+    --ex-red: #ff0c0cdb;
+    --scroll-grey: #c4c4c4;
+    --ex-green-bg: #26cf4240;
+    --ex-red-bg: #e4090952;
+    --ex-buy-green: #2dbd96;
+    --ex-buy-red: #ff0c0cdb;
+    --ex-buy-white: #fff;
+    --form-bg: #242625;
+    --tab-table: #1f2120;
+    //AUTH VAR
+    --auth-heading-bg: #182e22;
+    // --auth-head-green: #06fb79;
+    --auth-head-green: #2DBD96;
+    --auth-main-bg: #121413;
+    --auth-gradient: linear-gradient( to right top, #183023, #17291f, #16231b, #151c18, #131614);
+    --auth-form-bg: #050c08;
+    --auth-text: #757575;
+    --auth-btn: #2DBD96;
+    --auth-border: #0f7a41;
+    //settings
+    --stg-gray: #bcbcbc;
+    --stg-back: #343333;
+    --stg-green: #06fb79;
+    --stg-heading-bg: #182e22;
+    --stg-main-bg: #121413;
+    --stg-gradient: linear-gradient( to right top, #131614, #151c18, #16231b, #17291f, #183023);
+    --modal-bg: #1c231f;
+    --modal-head: #182e22;
+
+     //new
+     --p2p-light-bg:#121212;
+     --p2p-border:#202020;
+     --trade-green:#4BC83D;
+     --trade-red:#FF0000;
+     --light-green:#10201C;
+     --p2p-tab:#272829;
+     --buy-green:#4BC83D;
+     --nav-bg:#272829;
+     --hover-bg:#202122;
+}
+
+
+section {
+    padding: 80px 0;
+}
+
+section.exchange-sec {
+    padding: 40px 0;
+}
+
+.active-red{
+    background-color: var(--ex-red)!important;
+  }
+  
+  .active-green{
+    background-color: var(--buy-green)!important;
+  }
+/*sweet alerts*/
+
+.swal2-popup.swal2-toast .swal2-title {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.swal2-popup.swal2-toast .swal2-html-container {
+    margin: 5px;
+    font-size: 13px;
+}
+
+.input-errors {
+    padding-left: 13px;
+}
+
+input[type="date"] {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        right: 10px;
+        height: 19px;
+        width: 19px;
+        background-color: var(--ex-buy-white);
+        border-radius: 3px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 24 24' style='fill: rgba(0  0  0  1)%3Btransform: %3BmsFilter:%3B'%3E%3Cpath d='M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z'%3E%3C/path%3E%3C/svg%3E");
+        z-index: 1;
+        pointer-events: none;
+    }
+}
+// css-2613qy-menu
+#react-select-3-listbox{
+    color: #333 !important;
+}
+.timer-btn{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    padding: 4px 20px;
+    border-radius: 18px;
+    text-align: center;
+    color: #FFF;
+    pointer-events: none;
+    a{
+        color: #FFF;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+    section {
+        padding: 50px 0;
+    }
+}
+
+.spinner-border {
+    color: var(--stg-green);
+    height: 30px;
+    width: 30px;
+}

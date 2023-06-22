@@ -1,0 +1,130 @@
+.orderdepth {
+  background-color: var(--box-bg);
+  filter: drop-shadow(var(--drop-shadow));
+  border-radius: 5px;
+  padding: 10px 10px;
+
+  .order-heading-box {
+    padding: 7px 7px;
+    .order-title {
+      h3 {
+        color: var(--white);
+        font-size: var(--fs-15);
+        font-weight: 400;
+      }
+    }
+
+    .order-tab {
+      .nav-pills {
+        background-color: var(--black-bg);
+        padding: 5px 5px;
+        border-radius: 40px;
+        align-items: center;
+        .nav-item {
+          .nav-link {
+            padding: 4px 4px;
+            color: var(--tab-grey);
+            text-transform: uppercase;
+            font-size: var(--fs-13);
+            font-weight: 500;
+            border-radius: 25px;
+            &.active {
+              background-color: var(--tab-active);
+              color: var(--active-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .table-box {
+    .inner-table {
+      .table-responsive {
+        .table_box {
+          margin: 0;
+          .table_head{
+                font-size: var(--fs-13);
+                font-weight: 500;
+                vertical-align: middle;
+                text-align: center;
+                color: var(--white);
+                .head1{
+                  border: 2px solid var(--ex-border);
+                }
+             
+          }
+
+          .table_content{
+             .content_info{
+                vertical-align: middle;
+                color: var(--white);
+                font-size: var(--fs-12);
+                font-weight: 500;
+                text-align: center;
+                .info-box1{
+                  padding: 4px;
+                }
+              }
+            }
+        }
+
+        #sell-table {
+          thead {
+            tr {
+              th {
+                &:nth-child(1) {
+                  border-left: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .buysell {
+    .tab-info {
+      .tab-content {
+        .buy-content {
+          .form-box {
+            .hstack {
+              gap: 15px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+  .orderdepth {
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .orderdepth {
+    .table-box {
+      .inner-table {
+        .table-responsive {
+          #sell-table {
+            thead {
+              tr {
+                th {
+                  &:nth-child(1) {
+                    border-left: 2px solid var(--ex-border);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

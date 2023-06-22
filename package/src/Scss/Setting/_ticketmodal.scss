@@ -1,0 +1,91 @@
+#main {
+    .modal_list {
+        .name_info {
+            p {
+                color: var(--white);
+                font-size: 13px;
+                font-weight: 500;
+            }
+            h5 {
+                color: var(--white);
+                font-size: 13px;
+                font-weight: 500;
+                span {
+                    color: var(--stg-green);
+                }
+            }
+        }
+        .comment_box {
+            label {
+                color: var(--white);
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .scroll_box {
+                max-height: 350px;
+                overflow-y: scroll;
+                border: 1px solid var(--ex-border);
+                border-radius: 15px;
+                .comment_section {
+                    border-radius: 15px;
+                    background-color: var( --black-bg);
+                    .profile_box {
+                        .img_comment {
+                            h3 {
+                                color: var(--white);
+                                font-size: 13px;
+                            }
+                        }
+                        .date_comment {
+                            color: var(--white);
+                            font-size: 13px;
+                        }
+                    }
+                    .content_info {
+                        color: var(--white);
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .comment_text {
+            label {
+                color: var(--white);
+                font-size: 14px;
+            }
+            .form-control {
+                background-color: var( --black-bg);
+                color: var(--scroll-grey);
+                font-size: 14px;
+            }
+        }
+        .btn_box {
+            .btn_submit {
+                color: var(--black-bg);
+                font-size: 14px;
+                font-weight: 500;
+                background-color: var(--stg-green);
+                border-radius: 20px;
+                padding: 6px 20px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    #main {
+        .modal_list {
+            padding: 0px !important;
+            .comment_box {
+                .scroll_box {
+                    padding: 5px !important;
+                }
+            }
+            .btn_box {
+                .btn_submit {
+                    width: 75% !important;
+                }
+            }
+        }
+    }
+}

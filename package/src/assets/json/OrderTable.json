@@ -1,0 +1,170 @@
+{
+    "market depth_buy_data": [
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        },
+        {
+            "buyvol": "73.00",
+            "buyprice": "45.00"
+        }
+    ],
+    "market depth_sell_data": [
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        },
+        {
+            "sellprice": "45.00",
+            "sellvol": "73.00"
+        }
+    ],
+    "order volume_buy_data": [
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        },
+        {
+            "buyvol": "20.00",
+            "buyprice": "20.00"
+        }
+    ],
+    "order volume_sell_data": [
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        },
+        {
+            "sellprice": "20.00",
+            "sellvol": "20.00"
+        }
+    ]
+}

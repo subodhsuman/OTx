@@ -1,0 +1,13 @@
+
+    .setting-ul{
+        background-color: var(--box-bg);
+        min-height: 90vh;
+        .list-group-item{
+            background-color: transparent;
+            color: var(--stg-gray);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            border-bottom: 1px solid var(--form-bg);
+        }
+    }

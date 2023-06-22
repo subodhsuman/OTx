@@ -1,0 +1,46 @@
+.tradehistory {
+  background-color: var(--box-bg);
+  filter: drop-shadow(var(--drop-shadow));
+  border-radius: 5px;
+  padding: 10px 10px;
+
+  .trade-head {
+    h3 {
+      color: var(--white);
+      font-size: var(--fs-15);
+      font-weight: 400;
+    }
+  }
+
+  .table-responsive {
+    .table {
+        margin: 0;
+        thead {
+            tr {
+                th {
+                    border: 2px solid var(--ex-border);
+                    font-size: var(--fs-13);
+                    font-weight: 500;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: var(--white);
+                }
+            }
+        }
+
+
+        tbody {
+            tr {
+                td {
+                    font-size: var(--fs-12);
+                    font-weight: 500;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: var(--white);
+                    padding: 4.9px 5px;
+                }
+            }
+        }
+    }
+  }
+}

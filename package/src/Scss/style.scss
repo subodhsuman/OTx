@@ -1,0 +1,54 @@
+//BASE SCSS
+@import "./base/base";
+//COMPONENTS SCSS
+@import "./components/components";
+//PAGES SCSS
+@import "./pages/pages";
+//UTILITES SCSS
+@import "./Utilites/utilites";
+@import "./Setting/_setting.scss";
+@import "./Setting/common.scss";
+
+@font-face {
+  font-family: URDWIN;
+  src: url(../assets/font/URWDIN-Thin.woff2);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: URDWIN;
+  src: url(../assets/font/URWDIN-XLight.woff2);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: URDWIN;
+  src: url(../assets/font/URWDIN-Light.woff2);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: URDWIN;
+  src: url(../assets/font/URWDIN-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: URDWIN;
+  src: url(../assets/font/URWDIN-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: URDWIN;
+  src: url(../assets/font/URWDIN-Bold.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: URDWIN;
+  src: url(../assets/font/URWDIN-Black.woff2);
+  font-weight: 900;
+}
+
+

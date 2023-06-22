@@ -1,0 +1,45 @@
+.accordion_box {
+  .accordion {
+    --bs-accordion-bg: var(--dark-green);
+    --bs-accordion-border-width: 0;
+
+    .accordion-item {
+      color: var(--bs-accordion-color);
+      background-color: var(--dark-green);
+      padding: 10px 20px;
+
+      .accordion-button:not(.collapsed) {
+        color: var(--white);
+        background-color: transparent;
+      }
+
+      .accordion-button::after {
+        background-image: url(/images/home/chevron.png);
+      }
+
+      .accordion-button:not(.collapsed)::after {
+        background-image: url(/images/home/chevron.png);
+      }
+
+      .accordion-button {
+        border-bottom: 2px solid var(--green);
+        border-radius: 0;
+      }
+      .accordion-button:focus {
+        border-bottom: 2px solid var(--green);
+      }
+      .accordion-item:last-of-type .accordion-button.collapsed {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .accordion-body {
+        color: var(--white);
+        font-weight: 300;
+      }
+      .accordion-button {
+        border-bottom: 2px solid var(--green);
+        color: var(--bs-white);
+      }
+    }
+  }
+}

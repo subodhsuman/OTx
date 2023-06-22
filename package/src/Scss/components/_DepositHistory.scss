@@ -1,0 +1,44 @@
+.deposit_history {
+    background-color: var(--black-bg);
+    min-height: 100vh;
+    padding: 0 !important;
+    .history_heading {
+        h3 {
+            color: var(--white);
+            font-size: 17px;
+        }
+    }
+    .table_history {
+        a {
+            color: var( --scroll-grey);
+            font-size: 15px;
+            text-decoration: unset;
+            font-weight: 500;
+        }
+        table {
+            background-color: var( --box-bg);
+            border: 1px solid var(--ex-border);
+            thead {
+                tr {
+                    th {
+                        color: var(--white);
+                        font-size: 13px;
+                        font-weight: 500;
+                        border: 1px solid var(--ex-border);
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        color: var(--white);
+                        font-size: 13px;
+                        font-weight: 500;
+                        border: 1px solid var(--ex-border);
+                        padding: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

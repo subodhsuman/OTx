@@ -1,0 +1,35 @@
+//NAVBAR SCSS
+@import "./navbar";
+//FOOTER SCSS
+@import "./footer";
+
+//******************************************************* LANDING PAGE SCSS *******************************************************//
+//HEADING SCSS
+@import "./Landing/heading";
+//TREND TABLE
+@import "./Landing/trendtable";
+//ACCORDION SCSS
+@import "./Landing/accordion";
+//HOW WORK SCSS
+@import "./Landing/howwork";
+
+//******************************************************* EXCHANGE PAGE SCSS *******************************************************//
+//CRYPTO LIST SCSS
+@import "./Exchange/cryptolist";
+//DEATIL BAR SCSS
+@import "./Exchange/detailbar";
+//CHART SCSS
+@import "./Exchange/chart";
+//ORDER DEPTH SCSS
+@import "./Exchange/orderdepth";
+//TRADE HISTORY SCSS
+@import "./Exchange/tradehistory";
+//BUY SELL SCSS
+@import "./Exchange/buysell";
+//ORDER COMPONENT SCSS
+@import "./Exchange/ordercomponent";
+@import "./_DepositHistory.scss";
+@import "./_PortfolioPage.scss";
+@import "./_WithdrawHistory.scss";
+//order modal
+@import "./Exchange/ordermodal.scss";

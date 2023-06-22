@@ -1,0 +1,24 @@
+@import './home';
+//LOGIN SCSS
+@import './Auth/login';
+//SIGNUP SCSS
+@import './Auth/signup';
+//RESET PASSWORD SCSS
+@import './Auth/resetpassword';
+//OTP SCSS
+@import  './Auth/otp';
+//FORGOT PASSWORD SCSS
+@import  './Auth/forgotpassword';
+//buysell
+@import './_buysell.scss';
+
+
+// /_p2p_home
+@import './p2p/p2p_home';
+//_p2pChatBox
+@import  './p2p/p2pChatBox';
+
+
+
+@import './p2p/p2p';
+@import './p2p/p2pOrder';

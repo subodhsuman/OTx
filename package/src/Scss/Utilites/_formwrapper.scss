@@ -1,0 +1,16 @@
+.auth-inner-wrapper {
+  background-color: var(--auth-main-bg);
+  background-image: var(--auth-gradient);
+  border-radius: 0 0 10px 10px;
+
+  .auth-heading-box {
+    background-color: var(--auth-heading-bg);
+    padding: 15px 15px;
+    border-radius: 10px 10px 0 0;
+
+    h3 {
+      color: var(--auth-head-green);
+      font-size: var(--fs-18);
+    }
+  }
+}

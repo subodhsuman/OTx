@@ -1,0 +1,73 @@
+    .profile_form{
+        .basic_heading{
+            h6{
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+        label{
+            font-size: 14px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 12px;
+            color: var(--white);
+        }
+        .form-control{
+            background-color: var(--black-bg);
+            color: var(--stg-gray);
+            font-size: 14px;
+            font-weight: 500;
+            border:none;
+            &:focus{
+                box-shadow: unset;
+            }
+        }
+        .form-select{
+            background-color: var(--black-bg) !important;
+            color: var(--stg-gray) !important;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            &:focus{
+                box-shadow: unset;
+            }
+            option{
+                background-color: var(--black-bg);
+                color: var(--stg-gray);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .setting-groupped{
+            .form-control{
+                background-color: var(--black-bg);
+                color: var(--stg-gray);
+                font-size: 14px;
+                font-weight: 500;
+                &:focus{
+                    box-shadow: unset;
+                }
+            }
+            .input-group-text{
+                background-color: var(--black-bg);
+            }
+        }
+        .save_btn{
+            button{
+                background-color: var(--stg-green);
+                color: var(--black-bg);
+                font-size: 14px;
+                font-weight: 500;
+                &:active{
+                    background-color: var(--stg-green);
+                    color: var(--black-bg);
+                }
+                &:hover{
+                    background-color: var(--stg-green);
+                    color: var(--black-bg);
+                }
+            }
+        }
+        
+    }

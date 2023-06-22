@@ -1,0 +1,272 @@
+.order_box {
+  background-color: var(--box-bg);
+  filter: drop-shadow(var(--drop-shadow));
+  border-radius: 5px;
+  min-height: 376px;
+  .order_tabs {
+    .nav-pills {
+      background-color: var(--black-bg);
+      border-radius: 30px;
+      .nav-item {
+        .nav-link {
+          border-radius: 20px;
+          color: var(--scroll-grey);
+          font-size: var(--fs-12);
+          font-weight: 500;
+          padding: 3px 6px;
+          &.active {
+            background-color: var(--tab-active);
+            color: var(--black-bg);
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      .table_box_data {
+        .tabs_heading {
+          color: var(--scroll-grey);
+          font-size: var(--fs-13);
+          &.head2 {
+            text-align: end;
+          }
+        }
+        .data_list {
+          max-height: 278px;
+          overflow-y: scroll;
+          padding: 0 5px;
+        
+          .list_data {
+            border-bottom: 1px solid var(--ex-border);
+            padding: 5px 0;
+            padding-bottom: 14px;
+            .currency_list {
+              .currency_name p {
+                color: var(--white);
+                font-size: var(--fs-12);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                span {
+                  color: var(--scroll-grey);
+                }
+              }
+              .amount_currency {
+                color: var(--white);
+                font-size: var(--fs-12);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+            .currency_list1 {
+              .currency_name p {
+                color: var(--white);
+                font-size: var(--fs-12);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                span {
+                  color: var(--scroll-grey);
+                }
+              }
+              .amount_currency {
+                color: var(--white);
+                font-size: var(--fs-12);
+                border-bottom: 2px solid var(--ex-border);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+            .currency_list2 {
+              p {
+                color: var(--white);
+                font-size: var(--fs-12);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+            .currency_list3 {
+              .btn-box {
+                button {
+                  background-color: unset !important;
+                  color: var(--ex-green);
+                  font-size: var(--fs-12);
+                  font-weight: 500;
+                }
+              }
+              .total_amount {
+                button {
+                  background-color: unset !important;
+                  color: var(--ex-red);
+                  font-size: var(--fs-12);
+                  font-weight: 500;
+                }
+              }
+            }
+            .progress_bar_box {
+              label {
+                font-size: var(--fs-12);
+                font-weight: 500;
+                color: var(--white);
+                margin-bottom: 5px;
+              }
+              .progress {
+                border-radius: 20px;
+                height: 10px;
+                .progress-bar {
+                  background-color: var(--tab-active);
+                }
+              }
+            }
+          }
+        }
+      }
+      .table_box_data1 {
+        .tabs_heading {
+          color: var(--scroll-grey);
+          font-size: var(--fs-13);
+          &.head2 {
+            text-align: end;
+          }
+        }
+        .data_list {
+          max-height: 295px;
+          overflow-y: scroll;
+          .list_data {
+            border-bottom: 1px solid var(--ex-border);
+            padding: 5px 0;
+            .currency_list {
+              .currency_name p {
+                color: var(--white);
+                font-size: var(--fs-12);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                span {
+                  color: var(--scroll-grey);
+                }
+              }
+              .amount_currency {
+                color: var(--white);
+                font-size: var(--fs-12);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+            .currency_list1 {
+              .currency_name p {
+                color: var(--white);
+                font-size: var(--fs-12);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                span {
+                  color: var(--scroll-grey);
+                }
+              }
+              .amount_currency {
+                color: var(--white);
+                font-size: var(--fs-12);
+                border-bottom: 2px solid var(--ex-border);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+            .currency_list2 {
+              .list_date p {
+                color: var(--white);
+                font-size: var(--fs-12);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+            .currency_list3 {
+              .btn_status {
+                color: var(--white);
+                font-size: var(--fs-12);
+              }
+              .badges_data .badge {
+                background-color: var(--tab-active);
+                color: var(--black-bg);
+                font-size: var(--fs-12);
+                min-width: 100px;
+                padding: 6px;
+                font-weight: 600;
+                border-radius: 20px;
+              }
+            }
+            .currency_list4 {
+              color: var(--white);
+              font-size: var(--fs-12);
+            }
+            .progress_bar_box1 {
+              label {
+                color: var(--white);
+                font-size: var(--fs-12);
+              }
+              .progress {
+                border-radius: 20px;
+                height: 10px;
+                .progress-bar {
+                  background-color: var(--ex-red);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.log-reg{
+  background-color: var(--box-bg);
+  filter: drop-shadow(var(--drop-shadow));
+  border-radius: 5px;
+  padding: 10px 10px; 
+  min-height: 376px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  a{
+
+    .btn{
+      font-size: 13px;
+      width: 180px;
+    }
+  }
+  p{
+    font-size: 13px;
+  }
+}
+/* width */
+.data_list::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Handle */
+.data_list::-webkit-scrollbar-thumb {
+  background: var(--scroll-grey);
+  border-radius: 10px;
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+  .order_box {
+    .tab-content {
+      .tab-pane {
+        .table_box_data {
+          .data_list {
+            max-height: 259px;
+          }
+        }
+      }
+    }
+  }
+}

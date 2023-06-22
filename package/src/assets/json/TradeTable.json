@@ -1,0 +1,73 @@
+{
+    "TradeData":[
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "buy"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "sell"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "buy"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "sell"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "buy"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "sell"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "buy"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "sell"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "buy"
+        },
+
+        {
+            "price":"19.00",
+            "vol":"81.43",
+            "time":"12:03:32",
+            "ordertype": "sell"
+        }
+    ]
+}

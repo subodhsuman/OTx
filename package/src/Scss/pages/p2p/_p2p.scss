@@ -1,0 +1,498 @@
+.p2p_buy_sell {
+    background-color: var(--main-bg);
+    .p2p_buy_box {
+        background-color: var(--p2p-light-bg);
+        border: 1px solid var( --p2p-border);
+        .link_box_p2p {
+            .p2p_main_box {
+                .nav-pills {
+                    background-color: var(--p2p-tab);
+                    border-radius: 20px;
+                    .nav-item {
+                        .nav-link {
+                            color: var(--ex-buy-white);
+                            border-radius: 20px;
+                            padding: 6px 25px;
+                            &.buy {
+                                &.active {
+                                    background-color: var(--ex-buy-green);
+                                    color: var(--ex-buy-white);
+                                    border-radius: 20px;
+                                    padding: 6px 25px;
+                                }
+                            }
+                            &.sell {
+                                &.active {
+                                    background-color: var(--ex-buy-red);
+                                    color: var(--ex-buy-white);
+                                    border-radius: 20px;
+                                    padding: 6px 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tabs_p2p {
+                    .list-group {
+                        .list-group-item {
+                            background-color: unset;
+                            color: var(--auth-text);
+                            font-size: var( --fs-14);
+                            font-weight: 500;
+                            &.active {
+                                color: var(--ex-buy-green);
+                                border: unset;
+                            }
+                        }
+                    }
+                }
+            }
+            .order_links {
+                .list-group {
+                    .list-group-item {
+                        background-color: unset;
+                        border: unset;
+                        a {
+                            color: var(--ex-buy-green);
+                            font-size: var( --fs-14);
+                            font-weight: 500;
+                            text-underline-offset: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        // .tab-content {
+            // .tab-pane {
+                .top_head_p2p {
+                    label {
+                        color: var(--ex-buy-white);
+                        font-size: var( --fs-14);
+                        font-weight: 500;
+                        margin-bottom: 7px;
+                    }
+                    .input-group {
+                        background-color: var(--p2p-tab);
+                        border-radius: 5px;
+                        .form-control {
+                            background-color: transparent;
+                            border: unset;
+                            color: var(--auth-text);
+                            font-size: var( --fs-15);
+                            font-weight: 500;
+                        }
+                        .input-group-text {
+                            background-color: transparent;
+                            border: unset;
+                            color: var(--auth-text);
+                            font-size: var( --fs-14);
+                            font-weight: 500;
+                            .btn_search {
+                                border-left: 1px solid var(--auth-text) !important;
+                                background-color: unset;
+                                color: var(--ex-buy-white);
+                                font-size: var( --fs-14);
+                                font-weight: 500;
+                                padding: 0px 11px;
+                            }
+                        }
+                    }
+                    .dropdown {
+                        background-color: var(--p2p-tab);
+                        border-radius: 5px;
+                        .btn_drop {
+                            color: var(--auth-text);
+                            font-size: var( --fs-14);
+                            font-weight: 500;
+                        }
+                        .dropdown-menu {
+                            &.show {
+                                background-color: var(--main-bg);
+                                border: 1px solid var(--ex-buy-green);
+                                transform: translate(0px, 41px) !important;
+                                .list_orders {
+                                    .list-items {
+                                        color: var(--auth-text);
+                                        font-size: var( --fs-14);
+                                        font-weight: 500;
+                                        &:hover {
+                                            color: var(--ex-buy-green);
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                                .input-group {
+                                    border: 1px solid var(--ex-buy-green);
+                                    .form-control {
+                                        color: var(--ex-buy-green);
+                                        font-size: var(--fs-14);
+                                        font-weight: 500;
+                                    }
+                                     ::placeholder {
+                                        color: var(--ex-buy-green);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .form-select {
+                        background-color: var(--p2p-tab);
+                        border-radius: 5px;
+                        color: var(--auth-text);
+                        font-size: var( --fs-15);
+                        font-weight: 500;
+                    }
+                    .btn_filter {
+                        background-color: transparent;
+                        color: var(--ex-buy-green);
+                        font-size: var(--fs-15);
+                        font-weight: 500;
+                    }
+                }
+            // }
+      
+        // }
+    }
+}
+.otx-table {
+    .buy_list {
+        .buy_heading {
+            width: 20%;
+            height: 20px;
+
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
+                color: var(--white);
+            }
+        }
+
+        .buy_heading1 {
+            width: 20%;
+            height: 20px;
+
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
+                color: var(--white);
+            }
+            .badge {
+                color: rgb(3, 166, 109);
+                background-color: rgb(230, 255, 241);
+                padding: 3px 5px;
+                border-radius: 4px;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+        }
+    }
+    .table-data{
+        .main-data-list{
+            background-color: var(--nav-bg);
+            border-bottom: 3px solid var(--nav-bg);
+            &:hover{
+                background-color: var(--hover-bg);
+                border-bottom: 3px solid var(--hover-bg);
+               
+            }
+            .list_box_buy{
+                width: 20%;
+                color: var(--white);
+                font-size: 14px;
+                .otx-icon{
+                    span{
+                        height: 35px;
+                        width: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: var(--green);
+                        color: var(--white);
+                        border-radius: 50%;
+                    }
+                }
+                .otx-icon-data{
+                   
+                    p{
+                        color: var(--white);
+                    }
+                    label{
+                        color:var(--white);
+                        font-size: 12px;
+                    }
+                }
+                a{
+                    background-color: var(--trade-green);
+                    color: var(--white);
+                    border: 1px solid var(--trade-green);
+                    font-size: 14px;
+                }
+              
+            }
+            .imps-box {
+                p{
+                    color: var(--yellow);
+
+                    span{
+                        color: var(--white);
+                    }
+                }
+            }
+
+            .sell-btn{
+                background-color: var(--trade-red) !important;
+                border: 1px solid var(--trade-red) !important;
+                font-size: 14px;
+            }
+        }
+        .card-body{
+            background-color: var(--nav-bg);
+            color: var(--white);
+        
+            .main-data-list1{
+                .otx-icon{
+                    span{
+                        height: 35px;
+                        width: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: var(--green);
+                        color: var(--white);
+                        border-radius: 50%;
+                    }
+                }
+                .collapse-content{
+                    // width: 25%;
+                    font-size: 14px;
+                    
+                    .imps-box{
+                        p{
+                            color: var(--yellow);
+                            span{
+                                color: var(--white);
+                            }
+                        }
+                    }
+                    .input-group{
+                        border: 1px solid var(--green);
+                       
+                    .input-group-text{
+                        color: var(--white);
+                        font-size: 14px;
+                    }
+                    .form-control{
+                        color: var(--white);
+                        font-size: 14px;
+                    }
+                }
+
+                
+                .cancel-btn {
+                    a{
+                        border:1px solid var(--sub-text);
+                        color: var(--white);
+                    }
+                }
+                .buy-btn {
+                    a{
+                        background-color: var(--trade-green);
+                        color: var(--white);
+                    }
+                }
+                // .sell-input{
+                //     .border-color{
+                //         border: 1px solid var(--trade-red);
+                //     }
+                // }
+               
+                }
+                .sell-dropdown{
+                    .input-group{
+                        border: 1PX SOLID var(--green);
+                        ::placeholder {
+                            color: var(--white);
+                            font-size: 14px;
+                        }
+                     .dropdown-toggle{
+                        background-color: transparent;
+                        &::after {
+                            border-top: none !important;
+                            border-right: none !important;
+                            border-bottom: none !important;
+                            border-left: none !important;
+                          
+                        }
+                     }
+                    }
+                     
+                 }
+                
+                .sell_box{
+                    .input-group{
+                        border: 1px solid var(--trade-red) !important;
+                    }
+                }
+                .sell-btn{
+                   a{
+                    color: var(--white);
+                    background-color: var(--trade-red) !important;
+                    border: 1px solid var(--trade-red) !important;
+                    font-size: 14px;
+                   }
+                }
+            }
+        }
+    }
+}
+.modal {
+    .modal-dialog {
+        .modal-content {
+            background-color: var(--p2p-light-bg);
+            border: 1px solid var(--p2p-border);
+            .modal-header {
+                background-color: var(--nav-bg);
+                h1 {
+                    font-size: var( --fs-16);
+                    color: var(--ex-buy-white);
+                }
+                .btn_close {
+                    background-color: transparent;
+                }
+            }
+            .modal-body {
+                .nav-pills {
+                    background-color: var(--p2p-tab);
+                    border-radius: 20px;
+                    max-width: 155px;
+                    .nav-item {
+                        .nav-link {
+                            color: var(--ex-buy-white);
+                            border-radius: 20px;
+                            padding: 6px 25px;
+                            &.buy {
+                                &.active {
+                                    background-color: var(--ex-buy-green);
+                                    color: var(--ex-buy-white);
+                                    border-radius: 20px;
+                                    padding: 6px 25px;
+                                }
+                            }
+                            &.sell {
+                                &.active {
+                                    background-color: var(--ex-buy-red);
+                                    color: var(--ex-buy-white);
+                                    border-radius: 20px;
+                                    padding: 6px 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-content {
+                    .tab-pane {
+                        .form_box {
+                            label {
+                                font-size: var( --fs-14);
+                                color: var(--ex-buy-white);
+                                font-weight: 500;
+                            }
+                            .form-control {
+                                background-color: var(--p2p-tab);
+                                font-size: var( --fs-14);
+                                color: var(--ex-buy-white);
+                                font-weight: 500;
+                            }
+                            .form-select {
+                                background-color: var(--p2p-tab);
+                                font-size: var( --fs-14);
+                                color: var(--ex-buy-white);
+                                font-weight: 500;
+                            }
+                            .btn_buycoin {
+                                background-color: var(--ex-buy-green);
+                                color: var(--ex-buy-white);
+                                border-radius: 20px;
+                                padding: 6px 25px;
+                                border: 1px solid var(--ex-buy-green);
+                            }
+                            .btn_sellcoin {
+                                background-color: var(--ex-buy-red);
+                                color: var(--ex-buy-white);
+                                border-radius: 20px;
+                                padding: 6px 25px;
+                                border: 1px solid var(--ex-buy-red);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .p2p_buy_sell {
+        .p2p_buy_box {
+            .link_box_p2p {
+                flex-direction: column;
+                align-items: start !important;
+            }
+        }
+    }
+    .buy-usdt-btn{
+        a{
+            font-size: 12px;
+           
+            // background-color: var(--trade-red) !important;
+           
+        }
+    }
+    .buy-usdt-btn{
+        a{
+            font-size: 12px;
+        }
+    }
+    .otx-table .table-data .card-body .main-data-list1 .collapse-content {
+        width: 100%;
+        font-size: 14px;
+    }
+   
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .p2p_buy_sell {
+        .p2p_buy_box {
+            .link_box_p2p {
+                flex-direction: column;
+                .p2p_main_box {
+                    flex-direction: column;
+                }
+                .order_links {
+                    .list-group {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    .otx-table {
+        .table-data {
+            .main-data-list {
+                .list_box_buy {
+                    width: 100%;
+            }
+        }
+        .card-body{
+            .main-data-list1 {
+                .collapse-content {
+
+                    width:100%;
+                }
+            }
+        }
+        }
+}
+}

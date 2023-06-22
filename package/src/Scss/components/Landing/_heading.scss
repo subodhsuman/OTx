@@ -1,0 +1,37 @@
+.heading {
+  
+  h4 {
+    color: var(--white);
+    font-size: var(--fs-16);
+    margin: 0;
+    font-weight: 500;
+    position: relative;
+    padding-left: 70px;
+
+    &::before {
+      background-color: var(--light-green);
+      height: 2px;
+      width: 60px;
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+    }
+  }
+}
+
+
+.inner-wrapper {
+  h4 {
+    padding-left: 40px;
+
+    &::before {
+      height: 2px;
+    width: 45px;
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -11px;
+    }
+  }
+}

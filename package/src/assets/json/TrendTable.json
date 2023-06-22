@@ -1,0 +1,59 @@
+{
+    "TrendData":[
+        {
+            "currency_image":"btc.png",
+            "name":"btc",
+            "subname":"bitcoin",
+            "price":"22,366.82",
+            "change":"+1.82",
+            "chart":"chart-up.png"
+        },
+
+        {
+            "currency_image":"btc.png",
+            "name":"btc",
+            "subname":"bitcoin",
+            "price":"22,366.82",
+            "change":"-1.82",
+            "chart":"chart-down.png"
+        },
+
+        {
+            "currency_image":"btc.png",
+            "name":"btc",
+            "subname":"bitcoin",
+            "price":"22,366.82",
+            "change":"+1.82",
+            "chart":"chart-up.png"
+        },
+
+
+        {
+            "currency_image":"btc.png",
+            "name":"btc",
+            "subname":"bitcoin",
+            "price":"22,366.82",
+            "change":"+1.82",
+            "chart":"chart-down.png"
+        },
+
+        {
+            "currency_image":"btc.png",
+            "name":"btc",
+            "subname":"bitcoin",
+            "price":"22,366.82",
+            "change":"+1.82",
+            "chart":"chart-up.png"
+        },
+
+        {
+            "currency_image":"btc.png",
+            "name":"btc",
+            "subname":"bitcoin",
+            "price":"22,366.82",
+            "change":"+1.82",
+            "chart":"chart-down.png"
+        }
+    
+    ]
+}

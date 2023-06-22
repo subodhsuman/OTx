@@ -1,0 +1,88 @@
+.form_link {
+    .input-group {
+        background-color: var(--black-bg);
+        border-radius: 20px;
+        .form-control {
+            color: var(--scroll-grey);
+            background-color: unset;
+            font-size: 13px;
+        }
+        .input-group-text {
+            background-color: unset;
+            border: unset;
+            padding: 0 !important;
+            .btn_copy {
+                background-color: var(--ex-green);
+                color: var(--white);
+                font-size: 13px;
+                padding: 6px 16px;
+                border-radius: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+    .referral_table {
+        table {
+            thead {
+                tr {
+                    th {
+                        color: var(--white);
+                        font-size: 14px;
+                        font-weight: 500;
+                        border-bottom: 1px solid var(--ex-border);
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        color: var(--white);
+                        font-size: 14px;
+                        font-weight: 500;
+                        border-bottom: 1px solid var(--ex-border);
+                        padding: 10px;
+                        .status_change {
+                            .badge {
+                                background-color: var(--ex-green);
+                                padding: 8px 20px;
+                                color: var(--white);
+                                font-size: 14px;
+                                font-weight: 500;
+                                border-radius: 20px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.pagination_main{
+    .page-item{
+       .page-link{
+          background-color:black;
+          color:white;
+          border-color:green;
+       }
+     }
+    .active{
+      .page-link{
+       border-color:green;
+       background-color: white;
+        color:green;
+        font-weight: bold;
+        &:focus{
+            box-shadow: unset;
+        }
+       }
+     }
+ }
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .form_link {
+        padding: 0px !important;
+    }
+}

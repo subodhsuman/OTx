@@ -1,0 +1,46 @@
+@import './all_form.scss';
+@import './settingnav.scss';
+@import './fees.scss';
+@import './activitylog.scss';
+@import './tradingreport.scss';
+@import './Sidenavbar.scss';
+.setting-common-sec{
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    .common-head{
+        background-color: var(--modal-head);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        h5{
+            font-size: 15px;
+            color: var(--stg-green);
+        }
+    }
+    .common-more{
+        padding: 70px ;
+        background-color: var(--box-bg);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+#kyc_changes{
+    .common-more{
+        padding: 25px 70px;
+    }
+}
+@media all and (min-width:768px) and (max-width:991px){
+    .setting-common-sec{
+    .common-more{
+        padding: 30px  !important;
+    }   
+}
+}
+@media all and (min-width:320px) and (max-width:767px){
+    .setting-common-sec{
+    .common-more{
+        padding: 30px 15px  !important;
+    }   
+}
+}

@@ -1,0 +1,131 @@
+.buysell_page {
+    background-color: var(--black-bg);
+    min-height: 100vh;
+    .buy_sell_box {
+        .top_heading {
+            h3 {
+                color: var(--white);
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+        .buysell_content {
+            .tabs_btn {
+                background-color: var( --modal-head);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                .nav-pills {
+                    background-color: var( --stg-bs);
+                    border-radius: 20px;
+                    .nav-item {
+                        .nav-link {
+                            color: var(--white);
+                            font-size: 14px;
+                            font-weight: 500;
+                            border-radius: 20px;
+                            padding: 4px;
+                            &.buy_btn.active {
+                                background-color: var( --stg-green);
+                                color: var(--black-bg);
+                                font-weight: 500;
+                                border-radius: 20px;
+                                padding: 4px;
+                            }
+                            &.sell_btn.active {
+                                background-color: var( --ex-red);
+                                color: var(--white);
+                                font-weight: 500;
+                                border-radius: 20px;
+                                padding: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .tabs-info {
+                background-color: var(--modal-bg);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                .tab-content {
+                    .tab-pane {
+                        .buy_box {
+                            .input_form {
+                                label {
+                                    font-size: 13px;
+                                    color: var(--white);
+                                }
+                                .css-1s2u09g-control {
+                                    background-color: var(--black-bg) !important;
+                                    border-radius: 20px !important;
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                    border-width: unset;
+                                    border-color: unset;
+                                    border-style: unset;
+                                    .css-qc6sy-singleValue {
+                                        color: var(--scroll-grey) !important;
+                                    }
+                                }
+                                .css-1pahdxg-control {
+                                    background-color: var(--black-bg) !important;
+                                    border-radius: 20px !important;
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                    border-width: unset !important;
+                                    border-color: unset !important;
+                                    box-shadow: unset;
+                                    border-style: unset;
+                                }
+                                .input-group {
+                                    background-color: var(--black-bg) !important;
+                                    border-radius: 20px !important;
+                                    .input-group-text {
+                                        background-color: unset !important;
+                                        padding: 0 !important;
+                                    }
+                                    .form-control {
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                        color: var(--scroll-grey) !important;
+                                        background-color: unset !important;
+                                        border-left: 1px solid var(--ex-border) !important;
+                                    }
+                                    .form-select {
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                        color: var(--scroll-grey);
+                                        background-color: var(--black-bg) !important;
+                                        border-radius: 20px !important;
+                                    }
+                                }
+                            }
+                            .btn-buy-box {
+                                .btn_buy {
+                                    background-color: var( --stg-green);
+                                    color: var(--black-bg);
+                                    font-weight: 500;
+                                    border-radius: 20px;
+                                    padding: 3px 20px;
+                                }
+                                .btn_sell {
+                                    background-color: var( --ex-red);
+                                    color: var(--white);
+                                    font-weight: 500;
+                                    border-radius: 20px;
+                                    padding: 3px 20px;
+                                }
+                            }
+                            .currency_head {
+                                p {
+                                    color: var(--scroll-grey);
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

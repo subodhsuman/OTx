@@ -1,0 +1,31 @@
+.form_box {
+    .form_content {
+        label {
+            font-size: 13px;
+            color: var(--white);
+        }
+        .form-control,
+        .form-select {
+            color: var(--scroll-grey);
+            font-size: 13px;
+            background-color: var(--black-bg);
+            border-radius: 15px;
+        }
+        .btn_submit {
+            background-color: var(--stg-green);
+            font-size: 13px;
+            padding: 7px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .form_box {
+        padding: 0px !important;
+        .btn_submit {
+            width: 70% !important;
+        }
+    }
+}

@@ -1,0 +1,277 @@
+.portfolio_page {
+    background-color: var(--black-bg);
+    min-height: 100vh;
+    padding: 0 !important;
+    .row_bg_box {
+        background-color: var( --box-bg);
+        border-radius: 10px;
+        .search_box {
+            label {
+                font-size: 13px;
+                color: var( --scroll-grey);
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px;
+                color: var(--white);
+                font-weight: 600;
+            }
+            .input-group {
+                background-color: var(--tab-table);
+                max-width: 300px;
+                border-radius: 5px;
+                .input-group-text {
+                    background-color: unset !important;
+                    border: unset !important;
+                }
+                .form-control {
+                    background-color: unset;
+                    border: unset;
+                    color: var(--scroll-grey);
+                    font-size: 13px;
+                    &::placeholder {
+                        color: var(--scroll-grey);
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .router_boxes {
+            .portfolio_routers {
+                a {
+                    color: var(--white);
+                    font-size: 13px;
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+                .withdraw_red{
+                    &:hover{
+                        color: red;
+                    }
+                }
+                .deposit_green{
+                    &:hover{
+                        color: green;
+                    }
+                }
+            }
+            .form-check {
+                display: flex;
+                justify-content: end;
+                .form-check-input:checked {
+                    background-color: var(--tab-active);
+                    border-color: var(--tab-active);
+                }
+                .form-check-label {
+                    color: var(--scroll-grey);
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .portfolio_table {
+            table {
+                thead {
+                    tr {
+                        th {
+                            color: var(--white);
+                            font-size: 13px;
+                            font-weight: 600;
+                            width: 17%;
+                            border-top: 1px solid var( --ex-border);
+                            border-bottom: 1px solid var( --ex-border);
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            color: var(--white);
+                            font-size: 13px;
+                            font-weight: 500;
+                            border-bottom: 1px solid var( --ex-border);
+                            .currency {
+                                .data_info {
+                                    p span {
+                                        color: var(--scroll-grey);
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .progress_bar {
+                                label {
+                                    color: var(--tab-active);
+                                }
+                                .progress {
+                                    height: 7px;
+                                    border-radius: 20px;
+                                    background-color: var(--ex-border);
+                                    .progress-bar {
+                                        background-color: var(--tab-active);
+                                    }
+                                }
+                            }
+                            .button_group {
+                                .btn_wd {
+                                    color: var(--ex-green);
+                                    font-size: 13px;
+                                    background-color: unset;
+                                    border-left: 1px solid var(--ex-border) !important;
+                                }
+                                .btn_dp {
+                                    color: var(--ex-red);
+                                    font-size: 13px;
+                                    background-color: unset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                background-color: var(--modal-bg);
+                .modal-header {
+                    background-color: var(--modal-head);
+                    h5 {
+                        color: var(--ex-green);
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    .btn-close {
+                        background: transparent url('/images/icons/close.svg') center/1em auto no-repeat;
+                    }
+                }
+                .modal-body {
+                    .form_box {
+                        form {
+                            .withdraw_box {
+                                label {
+                                    color: var(--white);
+                                    font-size: 13px;
+                                }
+                                .form-control {
+                                    background-color: var(--black-bg);
+                                    border-radius: 20px;
+                                    color: var(--scroll-grey);
+                                    font-size: 13px;
+                                }
+                                .form-select {
+                                    background-color: var(--black-bg);
+                                    border-radius: 20px;
+                                    color: var(--scroll-grey);
+                                    font-size: 13px;
+                                }
+                                .fees_info {
+                                    p {
+                                        color: var(--ex-green);
+                                        font-size: 13px;
+                                    }
+                                }
+                                .fees_amount {
+                                    p {
+                                        color: var(--scroll-grey);
+                                        font-size: 12px;
+                                    }
+                                }
+                                .btn_proceed {
+                                    background-color: var(--ex-green);
+                                    color: var(--black-bg);
+                                    border: 1px solid var(--ex-green);
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    border-radius: 20px;
+                                    padding: 5px;
+                                    &:hover {
+                                        border: 1px solid var(--ex-green);
+                                        background-color: transparent;
+                                        color: var(--white);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .currency_name {
+                        .currency_btn {
+                            background-color: var(--ex-green);
+                            color: var(--black-bg);
+                            font-size: 14px;
+                            font-weight: 500;
+                            border-radius: 20px;
+                            padding: 5px;
+                        }
+                        label {
+                            color: var(--white);
+                            font-size: 13px;
+                        }
+                        h4 {
+                            color: var(--white);
+                            font-size: 15px;
+                        }
+                        .input-group {
+                            background-color: var(--black-bg);
+                            border-radius: 20px;
+                            .form-control {
+                                color: var(--scroll-grey);
+                                background-color: unset;
+                                font-size: 13px;
+                            }
+                            .input-group-text {
+                                background-color: unset;
+                                border: unset;
+                                padding: 0 !important;
+                                .btn_copy {
+                                    background-color: var(--ex-green);
+                                    color: var(--white);
+                                    font-size: 13px;
+                                    padding: 6px 16px;
+                                    border-radius: 20px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+
+                        .nav-pills{
+                            background-color: var(--black-bg);
+                            border-radius: 20px;
+                            .nav-item{
+                                .nav-link {
+                                    border-radius: 20px;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: var(--white);
+                                    padding: 5px;
+                                     &.active{
+                                        background-color: var(--ex-green);
+                                        color: var(--black-bg);
+                                        border-radius: 20px;
+                                        padding: 5px;
+                                     }
+                                }
+                            }
+                        }
+                    }
+                    .deposit_data_box {
+                        background-color: var(--black-bg);
+                        border-radius: 10px;
+                        .deposit_box {
+                            .list_deposit {
+                                color: var(--white);
+                                font-size: 13px;
+                            }
+                            .list_data {
+                                p {
+                                    color: var(--scroll-grey);
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

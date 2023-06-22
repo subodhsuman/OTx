@@ -1,0 +1,177 @@
+div#exchange {
+    background-color: var(--main-bg);
+}
+
+.crypto-list {
+    background-color: var(--box-bg);
+    filter: drop-shadow(var(--drop-shadow));
+    padding: 10px 10px;
+    border-radius: 5px;
+    min-height: 770px;
+    .tabs-box {
+        .nav-pills {
+            background-color: var(--black-bg);
+            padding: 5px 5px;
+            border-radius: 40px;
+            align-items: center;
+            .nav-item {
+                .nav-link {
+                    padding: 4px 4px;
+                    color: var(--tab-grey);
+                    text-transform: uppercase;
+                    font-size: var(--fs-13);
+                    font-weight: 500;
+                    border-radius: 25px;
+                    &.active {
+                        background-color: var(--tab-active);
+                        color: var(--active-color);
+                    }
+                }
+            }
+        }
+    }
+    .search-box {
+        padding: 5px 5px;
+        .input-group-text {
+            background-color: var(--form-bg);
+            border-color: var(--form-bg);
+        }
+        .input-group {
+            .form-control {
+                background-color: var(--form-bg);
+                border-color: var(--form-bg);
+                font-size: var(--fs-14);
+                color: var(--grey);
+                font-weight: 500;
+                &:focus {
+                    box-shadow: none;
+                }
+                &::placeholder {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .table-heading {
+        padding: 5px 5px;
+        border: 2px solid var(--ex-border);
+        .heading-list {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            justify-content: space-between;
+            li {
+                color: var(--grey);
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: var(--fs-13);
+                cursor: pointer;
+            }
+        }
+    }
+    .tab-info {
+        overflow: scroll;
+        overflow-x: hidden;
+        max-height: 600px;
+        .tab-content {
+            .ticker-item {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.7rem;
+                border-bottom: 2px solid var(--ex-border);
+                &.ticker-active {
+                    border-left: 4px solid var(--tab-active);
+                }
+                .ticker-info {
+                    display: flex;
+                    gap: 10px;
+                    .inner-info {
+                        h6 {
+                            color: var(--white);
+                            font-size: var(--fs-13);
+                            font-weight: 500;
+                            span {
+                                font-size: var(--fs-12);
+                                color: var(--sub-text);
+                            }
+                        }
+                        p {
+                            font-size: var(--fs-13);
+                            font-weight: 600;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+                .ticker-change {
+                    overflow: hidden;
+                    p {
+                        font-size: var(--fs-13);
+                        font-weight: 600;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* width */
+
+.tab-info::-webkit-scrollbar {
+    width: 2px;
+}
+
+
+/* Handle */
+
+.tab-info::-webkit-scrollbar-thumb {
+    background: var(--scroll-grey);
+    border-radius: 10px;
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+    .crypto-list {
+        .tab-info {
+            .tab-content {
+                .ticker-item {
+                    .ticker-info {
+                        gap: 5px;
+                        .ticker-image {
+                            img {
+                                max-width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .crypto-list {
+        min-height: 535px;
+        .tab-info {
+            max-height: 370px;
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .crypto-list {
+        margin-bottom: 10px;
+        min-height: 444px;
+        .tab-info {
+            max-height: 305px;
+        }
+    }
+}

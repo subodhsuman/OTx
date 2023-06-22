@@ -1,0 +1,341 @@
+.chat_box{
+    background-color: var(--black);
+    .buy_from{
+        p{
+            color: var(--stg-gray);
+        }
+        .timer_box{
+            span{
+                background-color: var(--green);
+                height: 30px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--white);
+                border-radius: 50%;
+                border: 1px solid var(--green);
+            }
+        }
+    }
+    .select_account{
+        .form-check-input {
+            background-color: transparent;
+            border: 2px solid var(--green);
+            :checked {
+                background-color: var(--green);
+                border-color: var(--green);
+            }
+        }
+    }
+    .order_detail_box{
+        p{
+            color: var(--white);
+            span{
+                color: var(--stg-gray);
+            }
+        }
+    }
+    .cht_msg_boc{
+        .input-group{
+            .form-control{
+                background: transparent;
+                border-color: var(--ex-gray);
+                font-size: 13px;
+                color: var(--ex-white);
+                &:focus{
+                    box-shadow: unset;
+                }
+            }
+            .input-group-text{
+                background: transparent;
+                border: none;
+            }
+        } 
+    }
+    .chat_main_box{
+        background-color: var(--p2p-light-bg);
+        ul{
+            li{
+                border: 1px solid var(--green);
+                padding: 4px 10px;
+                border-radius: 18px;
+                width: 25%;
+                text-align: center;
+            }
+           
+        }
+        .border_end{
+            border-right: 1px solid var(--green);
+        }
+        .detail_box{
+            background-color: #303E3A;
+            border: 1px solid var(--green);
+            color: var(--white);
+        }
+        .btn_transfer{
+            color: var(--white);
+            background-color: var(--green);
+            border: 1px solid var(--green);
+            font-size: 14px;
+        }
+        .btn_cancel{
+            color: var(--white);
+            background-color: transparent;
+            border: 1px solid var(--white);
+            font-size: 14px;
+        }
+    }
+   
+        .w_50{
+            width: 50%;
+        }
+    
+    .main_chat_box{
+        .head{
+            background-color: var(--green);
+            h6{
+                color: var(--white);
+                font-size: 22px;
+                span{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    color: var(--black);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--white);
+                }
+            }
+            .user_name{
+                span{
+                    color: var(--black) !important;
+                }
+            }
+        }
+        .chat{
+            background-color: var(--black);
+            height: 450px;
+            .sender{
+                position: relative;
+                z-index: 99;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    right: -10px;
+                    width: 45px;
+                    /* border-left: 10px solid #79647d; */
+                    border-right: 10px solid transparent;
+                    border-top: 12px solid #1a1a1a;
+                    border-bottom: 10px solid transparent;
+                    z-index: -1;
+                }
+                p{
+                    background-color: #1A1A1A;
+                    word-break: break-all;
+                    font-size: 14px;
+                }
+            }
+            .receiver{
+                position: relative;
+                z-index: 99;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: -10px;
+                    width: 45px;
+                    border-left: 10px solid transparent;
+                    border-right: 15px solid #152722;
+                    border-top: 12px solid #152722;
+                    border-bottom: 10px solid transparent;
+                    z-index: -1;
+                }
+                p{
+                    background-color: #152722;
+                    word-break: break-all;
+                    font-size: 14px;
+                }
+            }
+            
+        }
+    }
+    .have_question{
+        p{
+            color: var(--green);
+        }
+        h6{
+            color: var(--white);
+        }
+        span{
+            cursor: pointer;
+        }
+    }
+    .send_msg_box{
+        .input-group{
+            background-color: var(--green);
+            border: 1px solid var(--green);
+        .form-control ,
+        .input-group-text{
+            background-color: transparent;
+            // font-size: 14px;
+            color: var(--white);
+            padding: 11px 9px;
+        }
+        .input-group-text{
+            cursor: pointer;
+        }
+        ::placeholder {
+            color: var(--white);
+            opacity: 1; /* Firefox */
+          }
+          
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color: var(--white);
+          }
+          
+    }
+    }
+   
+}
+.cancel_order_modal ,
+.have_question_modal ,
+.modal_confirm ,
+.tips_modal {
+    .modal-content{
+    background-color: var(--light-green);
+    border: 1px solid var(--green);
+    border-radius: 14px;
+    h5{
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--white);
+    }
+    h6{
+        color: var(--white);
+    }
+    ul{
+        li{
+            color: var(--white);
+            margin-bottom: 7px;
+            span{
+                color: var(--green);
+            }
+        }
+    }
+    .form-check-input {
+        background-color: transparent;
+        border: 2px solid var(--green);
+        :checked {
+            background-color: var(--green);
+            border-color: var(--green);
+        }
+    }
+    label{
+        color: var(--white);
+    }
+    .btn_cancel{
+        background-color: transparent;
+        border: 1px solid var(--white);
+        color: var(--white);
+        font-size: 14px;
+    }
+    .btn_confirm{
+        background-color: var(--green);
+        border: 1px solid var(--green);
+        color: var(--white);
+        font-size: 14px;
+    }
+    .btn-close {
+        width: 2em;
+        height: 2em;
+        padding: 0.25em 0.25em;
+        background: transparent url(/public/images/p2p-chat/cross.png) center/2em auto no-repeat;
+        border: 0;
+        border-radius: 50%;
+        opacity: 1;
+        position: absolute;
+        right: 0;
+        top: -4px;
+    }
+    .border_top{
+        border-top: 1px solid var(--green) !important;
+    }
+    .form-control {
+        font-size: 14px;
+        color: var(--white);
+        background-color: transparent;
+        border: 1px solid var(--green);
+    }
+}
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .chat_box {
+        .chat_main_box {
+            ul {
+                li {
+                    width: 30%;
+                }}
+        }
+    }
+    }
+@media all and (min-width: 768px) and (max-width: 991px) {
+.chat_box {
+    .chat_main_box {
+        ul {
+            li {
+                padding: 4px 18px;
+                width: unset;
+            }}
+    }
+}
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+.chat_box {
+    .chat_main_box{
+        ul {
+            li {
+                padding: 7px 10px;
+                width: 100%;
+                margin-bottom: 16px;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+        .border_end{
+            border-right: none !important;
+        }
+    }
+    .about_order{
+        div{
+            flex-basis: 28.3% !important;
+        }
+    }
+    .w_50{
+        width: 100%;
+    }
+    .transferd_box{
+        br{
+            display: none;
+        }
+    }
+   
+}
+.chat_box {
+    .main_chat_box{
+        .head {
+            h6{
+                span {
+                    height: 35px;
+                    width: 35px;              
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+}
+

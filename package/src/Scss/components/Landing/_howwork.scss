@@ -1,0 +1,168 @@
+.slick-slider {
+    .slick-dots {
+        top: -42px;
+         li {
+            width: 60px;
+            height: 60px;
+            background-color: var(--white);
+            button {
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--white);
+                &::before {
+                    content: "";
+                    background-image: url(/images/home/slideicon.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 50px;
+                    height: 30px;
+                }
+            }
+         }
+    }
+}
+
+.slick-slide {
+
+  
+    &.slick-active.slick-center.slick-current {
+        .slider-box {
+        background-color: var(--dark-green);
+    }
+    }
+
+    .item {
+        .slider-box {
+            background-color: var(--opacity-bg);
+            padding: 10px 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 10px;
+            margin-left: 10px;
+
+            h3 {
+                font-size: var(--fs-18);
+                text-align: center;
+                color: var(--white);
+                font-weight: 500;
+            }
+            p {
+                color: var(--white);
+                font-size: var(--fs-13);
+                line-height: 20px;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.how_works_outer{
+    background: var(--gradient);
+    background-color: var(--main-bg);
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url('/images/home/how_works.png');
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 800px;
+    height: 800px;
+    right: 0;
+    margin: 0 auto;
+
+    animation: loading 7s linear infinite;
+
+    @keyframes loading {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    }
+    .how_works{
+        .heading {
+            h5{
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+            }
+        }
+        .description{
+            max-width: 720px;
+            margin-bottom: 50px !important;
+            h2{
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 1.45em;
+            }
+        }
+        .swiper_toggler{
+            margin-bottom: 65px !important;
+            .swiper-one{
+                z-index: 1;
+                position: relative;
+                display: inline-block;
+                button{
+                    height: 100px;
+                    width: 100px;
+                    background: var(--white);
+                    margin: 0px 25px;
+                    z-index: 1;
+                    position: relative;
+                    display: inline-block;
+                    &:hover{
+                        background: var(--light-green);
+                        border-color: var(--light-green);
+                        svg path{
+                            fill: var(--white);
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 30px;
+                    right: 30px;
+                    top: 50%;
+                    margin-top: -1px;
+                    border-bottom: 2px dashed var(--light-green);
+                }
+            }
+        }
+    }
+}
+  
+  .swiper_content{
+      position: relative;
+      display: block;
+      padding: 45px 35px 40px;
+      background: var(--dark-green);
+      text-align: center;
+      border-radius: 20px;
+  }
+  .swiper_content h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .swiper_content p{
+    color: var(--white);
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+  }

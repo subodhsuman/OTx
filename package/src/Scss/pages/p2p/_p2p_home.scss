@@ -1,0 +1,412 @@
+.p2p-home {
+    background-color: var(--black);
+
+    .p2p_home_sec {
+        background-image: url(/images/p2p-home/sec.png);
+        min-height: 87vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 25%;
+
+        h1 {
+            color: var(--white);
+            font-size: 50px;
+            line-height: 65px;
+            font-weight: 500;
+        }
+        .get_start{
+            background-color: var(--green);
+            border: 1px solid var(--green);
+        }
+    }
+
+    .p2p_work_box {
+        ul {
+            background: var(--p2p-light-bg);
+            padding: 3px;
+            border: 1px solid var(--p2p-border);
+            width: fit-content;
+            border-radius: 28px;
+
+            .nav-link {
+                color: var(--white);
+                font-size: 14px;
+                border-radius: 28px;
+                width: 115px;
+
+                &.green.active {
+                    color: var(--white);
+                    background-color: var(--trade-green);
+                }
+
+                &.red.active {
+                    color: var(--white);
+                    background-color: var(--trade-red);
+                }
+            }
+        }
+    }
+
+    .steps_p2p_works {
+        .before_box {
+            position: relative;
+
+            &:nth-child(1)::before {
+                position: absolute;
+                content: '';
+                top: 36px;
+                right: -164px;
+                height: 124px;
+                width: 319px;
+                background-image: url(/images/p2p-home/before.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            &:nth-child(2)::after {
+                position: absolute;
+                content: '';
+                top: 21px;
+                right: -135px;
+                height: 114px;
+                width: 319px;
+                background-image: url(/images/p2p-home/after.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .main_box {
+            span {
+                background-color: var(--green);
+                height: 120px;
+                width: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h4 {
+                color: var(--white);
+                font-size: 22px;
+            }
+
+            p {
+                color: var(--white);
+                font-size: 15px;
+            }
+        }
+    }
+
+    //p2p advantages
+    .p2p_advantages {
+        background: rgb(3, 6, 9);
+        background: linear-gradient(180deg, rgba(3, 6, 9, 1) 19%, rgba(14, 43, 49, 1) 72%);
+
+        .advantage_box_nth {
+            &:nth-child(3) {
+                // border: 2px solid var(--green);
+                // background: #071e26;
+                // box-shadow: rgb(72 188 150 / 15%) 0px 7px 29px 0px;
+            }
+
+            .advantage_box {
+                border: 2px solid #464646;
+                transition: all 0.2s ease-in-out;
+                min-height: 540px;
+
+                &:hover {
+                    border: 2px solid var(--green);
+                    background: #071e26;
+                    box-shadow: rgb(72 188 150 / 15%) 0px 7px 29px 0px;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+
+    //FAQ 
+    .faq {
+        h2 {
+            font-weight: 600;
+            font-size: 39px;
+            letter-spacing: 1.2px;
+        }
+
+        .accordion {
+            --bs-accordion-color: var(--white);
+            --bs-accordion-bg: var(--black);
+            --bs-accordion-border-color: transparent;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: -30px;
+                height: 430px;
+                width: 5px;
+                background-color: var(--auth-text);
+                border-radius: 11px;
+            }
+
+            .accordion-item {
+                // color: var(--bs-accordion-color);
+                background-color: var(--p2p-light-bg);
+                margin-bottom: 15px;
+
+                .accordion-button {
+                    box-shadow: none;
+                    color: var(--white);
+                    border-bottom: transparent;
+                    border: 1px solid transparent;
+                    // background-color: var(--p2p-light-bg);
+                    font-weight: 500;
+                    font-size: 19px;
+
+                    &::after {
+                        background-image: url(/images/icons/accordion-grey-arrow.svg);
+                    }
+
+                    &:not(.collapsed) {
+                        // padding-bottom: 0;
+                        border: 1px solid var(--p2p-border);
+                        border-bottom: transparent !important;
+                        color: var(--white);
+                        background-color: var(--p2p-light-bg);
+                        position: relative;
+
+                        &::after {
+                            background-image: url(/images/icons/accordion-white-arrow.svg);
+                        }
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            left: -32px;
+                            height: 164px;
+                            width: 5px;
+                            background-color: var(--green);
+                            border-radius: 11px;
+                            top: -3px;
+                        }
+
+                    }
+                }
+
+                .accordion-body {
+                    border: 1px solid var(--p2p-border);
+                    border-top: none !important;
+                }
+            }
+        }
+    }
+}
+
+
+// .......................
+
+@media all and (min-width: 1200px) and (max-width: 1399px) {
+    .p2p-home {
+        .steps_p2p_works{
+            .before_box {
+                &:nth-child(1)::before {
+                    top: 36px;
+                    right: -143px;
+                    height: 102px;
+                    width: 290px;
+                }
+
+                &:nth-child(2)::after {
+                    top: 21px;
+                    right: -133px;
+                    height: 92px;
+                    width: 262px;
+                }
+            }
+
+        }
+         .advantage_box {
+            min-height: 560px !important;
+        }
+      .faq {
+        .accordion{
+            &::before {
+                left: -16px;
+            }
+        }
+       .accordion-item {
+        .accordion-button:not(.collapsed){
+                &::before {
+                    left: -18px !important;
+                }
+            }
+        
+       }
+      }
+    }
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .p2p-home {
+        section {
+            padding: 60px 0;
+        }
+        .p2p_home_sec {
+            min-height: 53vh;
+
+            h1 {
+                font-size: 37px;
+                line-height: 47px;
+            
+            }
+        }
+        .steps_p2p_works{
+            .before_box {
+                &:nth-child(1)::before {
+                    right: -164px;
+                    height: 83px;
+                    width: 212px;
+                }
+
+                &:nth-child(2)::after {
+                    top: 41px;
+                    right: -143px;
+                    height: 70px;
+                    width: 198px;
+                }
+            }
+.main_box{
+    text-align: center;
+    span {
+        margin: auto;
+    }
+}
+        }
+         .advantage_box {
+          
+            min-height: 510px;
+        }
+      .faq {
+        .accordion{
+            &::before {
+                left: -16px;
+            }
+        }
+       .accordion-item {
+        .accordion-button:not(.collapsed){
+                &::before {
+                    left: -18px !important;
+                }
+            }
+        
+       }
+      }
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .p2p-home {
+        section {
+            padding: 55px 0;
+        }
+        .p2p_home_sec {
+            min-height: 50vh;
+
+            h1 {
+                font-size: 35px;
+                line-height: 43px;
+                br {
+                    display: none;
+                }
+            }
+        }
+        .steps_p2p_works{
+            .before_box {
+                &:nth-child(1)::before {
+                    display: none;
+                }
+
+                &:nth-child(2)::after {
+                    display: none;
+                }
+            }
+.main_box{
+    text-align: center;
+    span {
+        margin: auto;
+    }
+}
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .p2p-home {
+        section {
+            padding: 50px 0;
+        }
+        .p2p_home_sec {
+            min-height: 45vh;
+
+            h1 {
+                font-size: 26px;
+                line-height: 33px;
+            }
+        }
+
+        .steps_p2p_works {
+            .before_box {
+                &:nth-child(1)::before {
+                    display: none;
+                }
+
+                &:nth-child(2)::after {
+                    display: none;
+                }
+            }
+
+            .main_box {
+                text-align: center;
+
+                span {
+                    margin: auto;
+                }
+            }
+
+
+        }
+
+        //p2p advantages
+        .p2p_advantages {
+            .advantage_box {
+                margin-bottom: 13px;
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+        }
+
+        //FAQ
+        .faq {
+            h2 {
+                font-size: 28px;
+            }
+
+            .accordion {
+                &::before {
+                    display: none;
+                }
+
+                .accordion-item {
+                    .accordion-button:not(.collapsed) {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

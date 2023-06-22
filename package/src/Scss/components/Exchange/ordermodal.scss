@@ -1,0 +1,42 @@
+.order-modal{
+    background-color: var(--modal-bg);
+    color: var(--white);
+    .modal-header{
+        background-color: var(--modal-head);
+        h5{
+            font-size: 16px;
+            color: var(--ex-green);
+        }
+        .btn-close{
+            background: transparent url(/images/icons/close.svg) center/1em auto no-repeat;
+        }
+    }
+    .modal-body{
+        .name{
+            h5{
+                font-size: 15px;
+            }
+        }
+        .type{
+            h5{
+
+                font-size: 15px;
+            }
+        }
+      
+    }
+    .modal-footer{
+        .outer-orders{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background: var(--scroll-grey);
+    border-radius: 10px;
+  }
+}

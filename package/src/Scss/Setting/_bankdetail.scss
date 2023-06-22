@@ -1,0 +1,153 @@
+.bank_detail {
+
+    .nav-link {
+        font-size: 14px;
+        color: var(--ex-buy-white);
+        border: 1px solid var(--border);
+        text-transform: uppercase;
+        margin-right: 15px;
+        padding: 6px 6px;
+        min-width: 101px;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: var(--tab-table);
+        background: var(--ch-btn);
+    }
+
+    .bank_btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid transparent;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--ex-buy-white);
+        text-transform: capitalize;
+    }
+
+
+.accordion {
+    --bs-accordion-color: var(--ex-buy-white);
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: transparent;
+
+    .accordion-button {
+        color: var(--ex-buy-white);
+        background-color: #2c2c2c7a;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #2c2c2c7a;
+        color: var(--ex-buy-white);
+    }
+
+    .accordion-button::after {
+        background-image: url(/images/icons/accordion.svg);
+    }
+
+    .accordion-body {
+        h6 {
+            color: var(--ex-buy-white);
+        }
+    }
+}
+.account_head{
+    color: var(--light-grey);
+}
+.account_head_bottom{
+    color: var(--ch-neon);
+    opacity: 1;
+}
+.select_account{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ex-buy-white);
+
+    .form-check-input {
+        background-color: transparent;
+        border: 1px solid var(--ch-neon);
+        &:checked{
+            background-color: var(--ch-neon);
+            color: var(var(--ch-neon));
+        }
+    }
+    span{
+        color: var(--ex-buy-white);
+    }
+    label{
+        color: var(--ex-buy-white);
+    }
+}
+}
+.upi_box{
+    transform: translate(0, 250px);
+}
+.otx_form_field{
+    input{
+        background-color: var(--black-bg);
+        color: var(--stg-gray);
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+    }
+    select{
+        background-color: var(--black-bg);
+        color: var(--stg-gray);
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        &:focus{
+            box-shadow: unset;
+            outline: unset;
+        }
+    }
+}
+.kyc_update_modal{
+    .modal-content {
+        color: var(--ex-buy-white);
+        .modal-header{
+            background-color: var(--modal-head);
+            button{
+                background: transparent url(/images/icons/close.svg) center/1em auto no-repeat;
+            }
+        }
+        .modal-body{
+            background-color: var(--modal-bg);
+        }
+    }
+}
+
+
+//  ====================================
+//               @media
+//  ====================================
+@media all and (min-width:992px) and (max-width:1199px) {
+
+    .upi_box{
+        transform: translate(0, 70px);
+    }
+    
+    }
+
+
+
+@media all and (min-width:768px) and (max-width:991px) {
+
+    .upi_box{
+        transform: translate(0, 50px);
+    }
+    
+    }
+
+
+@media all and (min-width:320px) and (max-width:767px) {
+
+    .upi_box{
+        transform: translate(0, 50px);
+    }
+    
+    }

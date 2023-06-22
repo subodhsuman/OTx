@@ -1,0 +1,27 @@
+{
+    "ChooseData":[
+        {
+            "icon":"choose_1.png",
+            "title":"mobile payment made easy",
+            "para":"You can use a mobile device to pay with simple steps."
+        },
+
+        {
+            "icon":"choose_2.png",
+            "title":"No transaction fee",
+            "para":"You can buy tokens without paying any transaction fee."
+        },
+
+        {
+            "icon":"choose_3.png",
+            "title":"Protect the identity",
+            "para":"If we detect a threat to your identity, we will alert you."
+        },
+
+        {
+            "icon":"choose_4.png",
+            "title":"Security & control over money",
+            "para":"Provide high levels of security allowing the user to keep control money."
+        }
+    ]
+}

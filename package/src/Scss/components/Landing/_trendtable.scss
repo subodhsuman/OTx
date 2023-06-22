@@ -1,0 +1,94 @@
+.table-responsive {
+    .table {
+        white-space: nowrap;
+        thead {
+            tr {
+                th {
+                    color: var(--white);
+                    text-transform: capitalize;
+                    font-size: var(--fs-16);
+                    font-weight: 500;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                th {
+                    vertical-align: middle;
+
+                    #trend-image {
+                        text-align: right;
+                    }
+                }
+
+                td {
+                    vertical-align: middle;
+
+                    .trend-box {
+                        h6 {
+                            color: var(--white);
+                            text-transform: capitalize;
+                            font-size: var(--fs-16);
+                            font-weight: 500;
+                            margin-bottom: 0;
+
+                            span {
+                                font-weight: 400;
+                            }
+                        }
+
+                        .btn-list {
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            list-style: none;
+
+
+
+                            li {
+
+                                .btn-primary {
+                                    min-width: 120px;
+                                    background-color: var(--light-green);
+                                    border: 2px solid var(--light-green);
+
+                                    a {
+                                        color: var(--white);
+                                        text-decoration: none;
+                                        text-transform: capitalize;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                #trade-btn {
+                                    background-color: transparent;
+
+                                    &:hover {
+                                        background-color: var(--light-green);
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+            .btn_more{
+                color: var(--white);
+                font-size: var(--fs-14);
+                background-color: transparent;
+                border: 0;
+                &:hover{
+                    color: var(--green);
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+    #main {
+        .link_next {
+            background-color: var(--black-bg);
+            a {
+                color: var( --scroll-grey);
+                font-size: 15px;
+                text-decoration: unset;
+            }
+        }
+        .ticket_table {
+            table {
+                thead {
+                    tr {
+                        th {
+                            font-size: 13px;
+                            color: var(--white);
+                            font-weight: 500;
+                            border-bottom: 1px solid var(--ex-border);
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            font-size: 13px;
+                            color: var(--white);
+                            padding: 13px;
+                            border-bottom: 1px solid var(--ex-border);
+                        }
+                    }
+                }
+            }
+        }
+    }

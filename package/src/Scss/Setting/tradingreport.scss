@@ -1,0 +1,39 @@
+.trading_report{
+    .date-picker{
+        background-color: var(--black-bg);
+        label{
+            font-size: 14px;
+        }
+        input{
+            background-color: var(--black-bg);
+            color: var(--white);
+            padding: 0px;
+            font-size: 14px;
+            &:focus{
+                box-shadow: unset;
+            }
+        }
+    }
+    .include{
+        p{
+            font-size: 14px;
+        }
+        ul{
+            li{
+                font-size: 14px;
+            }
+        }
+    }
+    .save_btn{
+        button{
+            background-color: var(--stg-green);
+            color: var(--black-bg);
+            font-size: 14px;
+            font-weight: 500;
+            &:active{
+                background-color: var(--stg-green);
+                color: var(--black-bg);
+            }
+        }
+    }
+}
